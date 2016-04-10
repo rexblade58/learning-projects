@@ -1,4 +1,4 @@
-* { margin: 0; padding: 0; box-sizing: border-box; }
+﻿* { margin: 0; padding: 0; box-sizing: border-box; }
 
 body { font-family: system-ui, sans-serif; background: #f0f4f8; min-height: 100vh; display: flex; justify-content: center; padding: 2rem; }
 .container { width: 100%; max-width: 480px; }
@@ -17,3 +17,13 @@ h1 { color: #1a1a2e; margin-bottom: 1rem; }
 .actions button { border: none; background: #e8f1fb; color: #2c5282; width: 30px; height: 30px; border-radius: 6px; cursor: pointer; }
 .actions .delete { background: #fde8e8; color: #c53030; }
 .counter { margin-top: 1rem; color: #666; font-size: 0.9rem; }
+
+.edit-input {
+  flex: 1;
+  padding: 0.4rem 0.6rem;
+  border: 1px solid #4a90d9;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-family: inherit;
+}
+.todo:has(.edit-input) { padding: 0.4rem 0.6rem; }
